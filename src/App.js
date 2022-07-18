@@ -14,13 +14,13 @@ function App() {
             </div>
          </div>
          <div className='form'>
-          <h2>Entre em Contato</h2>
+          <h2>Contact</h2>
             <form>
                 <div className='itens-form'>
-                  <input type="text"/>
-                  <input type="text"/>
-                  <input type="text"/>
-                  <input type="text"/>
+                  <input placeholder="name" type="text"/>
+                  <input placeholder="email"type="text"/>
+                  <input placeholder="cellphone number"type="text"/>
+                  <input placeholder="text"type="text"/>
                   <input type="submit"/>
                 </div>
             </form>

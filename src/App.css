@@ -5,18 +5,18 @@
 }
 
 .center{
- max-width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 2%;
   display: flex;
-   flex-wrap: wrap; /*forçando o formulario a descer para baixo */
+  flex-wrap: wrap; /*forçando o formulario a descer para baixo */
 }
 
 .main{
   padding: 40px 0;
   width: 100%;
   background-image: linear-gradient(to bottom right, blueviolet, black);
-  min-height: 400px;
+  min-height: 1000px;
 }
 
 
@@ -40,13 +40,16 @@
 }
 
 .form{
-  border: 1px solid white;
   display: flex;
   width: 100%;
   max-width: 600px;
   margin: 10px auto;
   flex-wrap: wrap;
   justify-content: center;
+}
+.form h2{
+  color: white;
+  text-transform: uppercase;
 }
 
 .itens-form{
@@ -55,12 +58,28 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
-  border: 1px solid white;
   flex-wrap: wrap;
 }
 
-.itens-form input{
+.itens-form input[type=text]{
   width: 48%;
   height: 30px;
   margin: 8px 0px;
+}
+
+.itens-form input[type=submit]{
+  width: 100%;
+  height:40px;
+  background-color: blueviolet;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 768px){
+  .itens-form input [type=text]{
+    width: 100%;
+  }
+  
 }
