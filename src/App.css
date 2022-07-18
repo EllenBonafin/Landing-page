@@ -9,17 +9,58 @@
   margin: 0 auto;
   padding: 0 2%;
   display: flex;
+   flex-wrap: wrap; /*forçando o formulario a descer para baixo */
 }
 
 .main{
   padding: 40px 0;
   width: 100%;
-  background-color: blueviolet;
+  background-image: linear-gradient(to bottom right, blueviolet, black);
   min-height: 400px;
 }
+
+
 .menu{
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.menu h3{
+  color: white;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.form{
+  border: 1px solid white;
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.itens-form{
+  margin: 0 auto;
+  max-width: 540px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border: 1px solid white;
+  flex-wrap: wrap;
+}
+
+.itens-form input{
+  width: 48%;
+  height: 30px;
+  margin: 8px 0px;
 }
